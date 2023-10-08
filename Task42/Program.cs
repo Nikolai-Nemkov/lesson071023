@@ -23,4 +23,18 @@ int DecimalToBinary(int num)
     }
     return result;
 }
+2й вариант решения
+
+
+string DecimalToBinaryStr(int num)
+{
+    string result = string.Empty;
+    while (num > 0)
+    {
+        result = num % 2 + result;
+        num = num / 2;// num /= 2 //
+    }
+    return result;
+}
+
 
