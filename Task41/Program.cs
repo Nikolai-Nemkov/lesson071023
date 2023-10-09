@@ -7,7 +7,6 @@ Console.WriteLine();
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-
 Console.Write("Введите числа через запятую: ");
 int[] numbers = StringToNum(Console.ReadLine());
 PrintArray(numbers);
