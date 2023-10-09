@@ -23,6 +23,8 @@ int DecimalToBinary(int num)
     }
     return result;
 }
+
+/*
 2й вариант решения
 
 
@@ -37,4 +39,5 @@ string DecimalToBinaryStr(int num)
     return result;
 }
 
+*/
 
