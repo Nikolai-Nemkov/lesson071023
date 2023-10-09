@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine();
+Console.WriteLine("Задача 43");
+Console.WriteLine();
 
 // Задача 43: Напишите программу, которая найдёт точку пересечения двух прямых, 
 // заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; 
@@ -21,3 +23,4 @@ double x = (-b2 + b1)/(-k1 + k2);
 double y = k2 * x + b2;
 
 Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
+Console.WriteLine();
