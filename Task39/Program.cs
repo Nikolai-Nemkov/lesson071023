@@ -31,7 +31,6 @@ void PrintArray(int[] arr)
 // [5 4 3 2 1] -> [5 4 3 2 1]
 // [6 7 3 6] -> [6 3 7 6] 
 
-
 void ReverseArray(int[] arr)
 {
     for (int i = 0; i < arr.Length / 2; i++)

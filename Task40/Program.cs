@@ -21,7 +21,6 @@ bool IsExistTriangle(int a, int b, int c)
     return a < b + c && b < a + c && c < a + b;
 }
 
-
 bool res = IsExistTriangle(numA, numB, numC);
 
 Console.WriteLine(res ? "Треугольник существует": "Треугольник не существует");
