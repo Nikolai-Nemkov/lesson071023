@@ -24,6 +24,7 @@ int DecimalToBinary(int num)
     return result;
 }
 
+
 /*
 2й вариант решения
 
