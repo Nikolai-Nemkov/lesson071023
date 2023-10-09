@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-/ Задача 45: Напишите программу, которая будет создавать
+// Задача 45: Напишите программу, которая будет создавать
 // копию заданного массива с помощью поэлементного
 // копирования.
 
@@ -56,8 +56,5 @@ res[3] = -100;
 PrintArray(resB);
 
 
-
-
-
-    Console.WriteLine("Data, Tine");
+    //Console.WriteLine("Data, Tine");
 

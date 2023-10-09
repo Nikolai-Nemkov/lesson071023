@@ -1,11 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-/ Задача 44: Не используя рекурсию, выведите первые N чисел 
+// Задача 44: Не используя рекурсию, выведите первые N чисел 
 // Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
 // Если N = 5 -> 0 1 1 2 3
 // Если N = 3 -> 0 1 1
-// Если N = 7 -> 0 1 1 2 3 5 8
+// Если N = 7 -> 0 1 1 2 3 5 
+// (фибоначи начинается с 3й цифры. до нее это 0 и 1, и следующая цифра это сумма 2х предыдущих
 
 int Prompt(string message)
 {
@@ -18,7 +19,7 @@ int Prompt(string message)
 int[] FiboArray(int num)
 {
     int[] arr = new int[num];
-    //arr[0] = 0; 
+    // arr[0] = 0; массив по умолчанию заполнен нолями, нет смысла при сваивать.
     arr[1] = 1;
     for (int i = 2; i < arr.Length; i++)
     {
@@ -38,7 +39,7 @@ void PrintArray(int[] arr)
 }
 
 int number = Prompt("Введите число больше 1 : ");
-if (number < 2)
+if (number < 2)    
 {
     Console.WriteLine("Некорректный ввод.");
     return;

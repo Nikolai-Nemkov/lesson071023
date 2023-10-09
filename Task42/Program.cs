@@ -7,26 +7,27 @@ Console.WriteLine("Hello, World!");
 // 13 -> 1101
 // 2 -> 10
 
-Console.Write("Can you enter number:");
+Console.Write("Введите число:");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(DecimalToBinary(number));
 
-int DecimalToBinary(int num)
+int DecimalToBinary(int num)   // DecimalToBinary перевод как "ДесятичноеДвоичное"
 {
     int result = 0;
     int mult = 1;
-    while (num > 0)
+    while (num > 0)    // метод for используем когда нам известно количество операций
+                               // а while когда неизвестно.
     {
-        result += num % 2 * mult;
-        num = num / 2;// num /= 2 //
-        mult *= 10;
+        result += num % 2 * mult;   // цикл деления будет до 0. если при делении будет четное, ставим -0, нечетное -1
+        num = num / 2;              // num /= 2 
+        mult *= 10;        // 
     }
     return result;
 }
 
 
 /*
-2й вариант решения
+2й вариант решения, меняем метод.
 
 
 string DecimalToBinaryStr(int num)
@@ -35,7 +36,7 @@ string DecimalToBinaryStr(int num)
     while (num > 0)
     {
         result = num % 2 + result;
-        num = num / 2;// num /= 2 //
+        num = num / 2;   // num /= 2 //
     }
     return result;
 }

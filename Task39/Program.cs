@@ -5,7 +5,8 @@ Console.WriteLine("Hello, World!");
 одномерный массив (последний элемент будет на первом
 месте, а первый - на последнем и т.д.)
 [1 2 3 4 5] -> [5 4 3 2 1]
-[6 7 3 6] -> [6 3 7 6] */
+[6 7 3 6] -> [6 3 7 6] 
+*/
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
@@ -17,19 +18,35 @@ int[] CreateArrayRndInt(int size, int min, int max)
         arr[i] = rnd.Next(min, max + 1);
     }
     return arr;
-void PrintArray(int[] arr)
+}
+    void PrintArray(int[] arr)
 {
     Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
+    }
+
+
+
+    //Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
         else Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
+
 }
 
-// [5 4 3 2 1] -> [5 4 3 2 1]
+
+// [1 2 3 4 5] -> [5 4 3 2 1]
 // [6 7 3 6] -> [6 3 7 6] 
+
+int[] array = CreateArrayRndInt(5, 1, 9);  // 5  элементов от 1 до 9 / Выше это метод получения и вывода массива, ниже переворачивание
+// PrintArray(array);
+
 
 void ReverseArray(int[] arr)
 {
@@ -41,7 +58,7 @@ void ReverseArray(int[] arr)
     }
 }
 
-int[] array = CreateArrayRndInt(5, 1, 9);
+int[] array = CreateArrayRndInt(5, 1, 9);  // 5  элементов от 1 до 9
 PrintArray(array);
 
 ReverseArray(array);
