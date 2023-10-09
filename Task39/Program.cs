@@ -16,10 +16,7 @@ int[] CreateArrayRndInt(int size, int min, int max)
     {
         arr[i] = rnd.Next(min, max + 1);
     }
-
     return arr;
-}
-
 void PrintArray(int[] arr)
 {
     Console.Write("[");
