@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Задача 45");
 
 // Задача 45: Напишите программу, которая будет создавать
 // копию заданного массива с помощью поэлементного
@@ -23,12 +23,13 @@ void PrintArray(int[] arr)
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1)
+            Console.Write($"{arr[i]}, ");
+        else
+            Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
 }
-
 
 int[] CopyArray(int[] arr)
 {
@@ -56,5 +57,4 @@ res[3] = -100;
 PrintArray(resB);
 
 
-    //Console.WriteLine("Data, Tine");
-
+//Console.WriteLine("Data, Tine");
